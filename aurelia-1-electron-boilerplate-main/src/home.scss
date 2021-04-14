@@ -1,0 +1,8 @@
+$col: #a69966;
+
+/* Bootstrap */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+p {
+  color: $col;
+}

@@ -1,0 +1,75 @@
+<template>
+  <require from="./a-styles.scss"></require>
+  <h1>${message}</h1>
+  <video id="video" class="float-left bordered border-solid" autoplay></video>
+  <div class="container vard-bar" style="width: 150px;">
+    <div id="general-mode" class="row mb-3 selected-mode" style="cursor: -webkit-grab; cursor: grab;"
+      click.delegate="generalMode()">
+      <div class="col">
+        <div class="row">
+          <small> GENERAL MODE</small>
+        </div>
+        <div class="row">
+          <img src="../assets/home.png" style="width: 60px; height: 60px">
+        </div>
+      </div>
+    </div>
+    <div id="steth-mode" class="row mb-3 steth-mode" style="cursor: -webkit-grab; cursor: grab;"
+      click.delegate="stethMode()">
+      <div class="col">
+        <div class="row">
+          <small> STETHOSCOPE MODE</small>
+        </div>
+        <div class="row">
+          <img src="../assets/stethoscope.png" style="width: 60px; height: 60px">
+        </div>
+      </div>
+    </div>
+    <div id="ecg-mode" class="row mb-3" style="cursor: -webkit-grab; cursor: grab;" click.delegate="ecgMode()">
+      <div class="col">
+        <div class="row"><small>ECG MODE</small></div>
+        <div class="row"><img src="../assets/ecg.png" style="width: 60px; height: 60px">
+        </div>
+      </div>
+    </div>
+    <div id="camera-mode" class="row mb-3" style="cursor: -webkit-grab; cursor: grab;" click.delegate="cameraMode()">
+      <div class="col">
+        <div class="row">
+          <small>INSPECTION CAMERA MODE</small>
+        </div>
+        <div class="row">
+          <img src="../assets/videocamera.png" style="width: 60px; height: 60px">
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <div class="row">
+          <small> BLOOD PRESSURE</small>
+        </div>
+        <div class="row">
+          <h1 class="text-primary">130/88</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <div class="row">
+          <small> OXYGEN SATURATION</small>
+        </div>
+        <div class="row">
+          <h1 class="text-primary">95</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <div class="row">
+          <small> PULSE</small>
+        </div>
+        <div class="row">
+          <h1 class="text-primary">90</h1>
+        </div>
+      </div>
+    </div>
+</template>
